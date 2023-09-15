@@ -1,0 +1,299 @@
+<!--Create an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. 
+The navigation menu should have a fixed position and be visible on all pages. Use HTML to structure the menu, CSS to style it, 
+and JavaScript to add interactivity, such as changing the background color or font color of the menu when it is scrolled or when a 
+menu item is hovered over.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieStream</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie-play'></i>Movies
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img class="home1" src="images/home1.jpg" alt="">
+                <div class="home-text">
+                    <span>The Conjuring Universe</span>
+                    <h1>The Nun II</h1>
+                    <a href="#" class="btn">Book</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle' ></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img class="home2" src="images/home2.jpg" alt="">
+                <div class="home-text">
+                    <span>Universal Pictures</span>
+                    <h1>Oppenheimer</h1>
+                    <a href="#" class="btn">Book</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle' ></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img class="home3" src="images/home3.jpg" alt="">
+                <div class="home-text">
+                    <span>Sony Pictures </span>
+                    <h1>65</h1>
+                    <a href="#" class="btn">Book</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle' ></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img class="home4" src="images/home4.jpeg" alt="">
+                <div class="home-text">
+                    <span>Ding Entertainment</span>
+                    <h1>Asur 2</h1>
+                    <a href="#" class="btn">Book</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play-circle' ></i>
+                    </a>
+                </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+    
+
+    <section class="movies" id="movies">
+
+        <div class="movies" id="movies">
+            <h2 class="heading">Blockbuster</h2>
+            <div class="movie-container">
+                <div class=" swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m1.jpg" alt="">
+                    </div>
+                    <h3>Vikram Vedha</h3>
+                    <span>160m | Action,Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m2.webp" alt="">
+                    </div>
+                    <h3>Rocketry</h3>
+                    <span>157m | Drama</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m3.webp" alt="">
+                    </div>
+                    <h3>Interstellar</h3>
+                    <span>169m | Sci-fi,Adventure</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m4.jpg" alt="">
+                    </div>
+                    <h3>Bloody Daddy</h3>
+                    <span>122m | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m5.jpg" alt="">
+                    </div>
+                    <h3>Dunkirk</h3>
+                    <span>166m | War,Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m6.webp" alt="">
+                    </div>
+                    <h3>Inception</h3>
+                    <span>148m | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m7.webp" alt="">
+                    </div>
+                    <h3>Batman Begins</h3>
+                    <span>142m | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m8.webp" alt="">
+                    </div>
+                    <h3>Raanjhanaa</h3>
+                    <span>140m | Romance</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m9.webp" alt="">
+                    </div>
+                    <h3>Shubh Mangal Saavdhan</h3>
+                    <span>120m | Romance,Comedy</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/m10.webp" alt="">
+                    </div>
+                    <h3>English Vinglish</h3>
+                    <span>144m | Drama</span>
+                </div>
+            </div>
+        </div> 
+  
+    </section>
+
+
+    <section class="movies" id="coming">
+        <h2 class="heading">Upcoming</h2>
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming1.jpg" alt="">
+                    </div>
+                    <h3>The Pilot</h3>
+                    <span>74m | Drama,Thriller</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming2.jpg" alt="">
+                    </div>
+                    <h3>My Last Best Friend</h3>
+                    <span>105m | Drama</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming3.jpg" alt="">
+                    </div>
+                    <h3>The Great Indian Family</h3>
+                    <span>142m | Romance</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming4.jpg" alt="">
+                    </div>
+                    <h3>Enpend4bles</h3>
+                    <span>103m | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming5.jpg" alt="">
+                    </div>
+                    <h3>Fukrey 3</h3>
+                    <span>145m | Comedy</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming6.jpg" alt="">
+                    </div>
+                    <h3>Kraven The Hunter</h3>
+                    <span>145m | Adventure</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming7.jpg" alt="">
+                    </div>
+                    <h3>The Exorcist: Believer</h3>
+                    <span>122m | Horror</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming8.jpg" alt="">
+                    </div>
+                    <h3>Luv You Shankar</h3>
+                    <span>114m | Drama</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming9.jpg" alt="">
+                    </div>
+                    <h3>The Marvels</h3>
+                    <span>154m | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/coming10.jpg" alt="">
+                    </div>
+                    <h3>The Last Voyage of the Demeter</h3>
+                    <span>119m | Horror</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="newsletter" id="reviews">
+        <h2>Subscribe To Write Review</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Email" required>
+            <input type="submit" value="Subsribe" class="btn">
+        </form>
+    </section>
+
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie-play'></i>Movies
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+            <a href=""><i class='bx bxl-twitter' ></i></a>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>&#169; MovieStream All Rights Reserved.</p>
+    </div>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"> </script>
+</body>
+</html>
